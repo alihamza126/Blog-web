@@ -54,8 +54,7 @@ const Header = () => {
         <button className="cursor-pointer " onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}><SunIcon /></button>
       </nav>
       <div className="h-auto hidden sm:flex items-center ">
-        <Link href={siteMetadata.linkedin} className=" w-6 h-6 inline-block mr-4 hover:scale-125 transition-all ease-linear"><LinkedinIcon /></Link>
-        <Link href={siteMetadata.github} className=" w-6 h-6 inline-block mr-4 hover:scale-125 transition-all ease-linear"><GithubIcon className={'dark:fill-white'} /></Link>
+      search
       </div>
     </div >
   )

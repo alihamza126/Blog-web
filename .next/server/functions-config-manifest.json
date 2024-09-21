@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "functions": {
+    "/about": {},
+    "/contact": {},
+    "/blogs/[BlogSlug]": {},
+    "/catagories/[slug]": {},
+    "/disclaimer": {},
+    "/privacy-policy": {}
+  }
+}

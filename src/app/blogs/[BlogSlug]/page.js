@@ -9,12 +9,18 @@ import { notFound } from "next/navigation";
 
 
 export async function generateStaticParams() {
-  return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
+  const paths = allBlogs.map((blog) => ({
+    BlogSlug: blog._raw.flattenedPath,
+  }));
 
+  console.log("Generated paths:", paths);  // This will log paths during build
+  return paths;
 }
+
+
 export async function generateMetadata({ params }) {
   const Blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.BlogSlug);
-  const publishedDate = new Date(Blog.publishedAt).toISOString();
+  const publishedDate = new Date(Blog?.publishedAt)?.toISOString();
   const modifiedDate = new Date(Blog.updatedAt || publishedDate).toISOString();
   let imageList = [siteMetadata.socialBanner];
   if (Blog.image) {

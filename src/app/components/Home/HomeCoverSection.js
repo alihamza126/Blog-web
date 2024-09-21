@@ -8,11 +8,9 @@ const HomeCoverSection = ({ blogs }) => {
     const sortedBlog = sortBlog(blogs);
     const firstBlog = sortedBlog[0];
 
-    console.log(firstBlog.url_path)
-
     return (
         <div className="w-full inline-block">
-            <article className="flex flex-col items-start justify-end relative h-[60vh] sm:h-[80vh] mx-4 sm:mx-10 ">
+            <article className="flex flex-col items-start justify-end relative h-[60vh] sm:h-[80vh] mx-2 sm:mx-6 ">
                 <div className="absolute h-full right-0 left-0 top-0 bottom-0 bg-gradient-to-b from-transparent from-0% dark:to-dark/50 to-dark/90 z-0
                 rounded-xl
                 "></div>
@@ -23,8 +21,8 @@ const HomeCoverSection = ({ blogs }) => {
                     fill
                     alt={firstBlog.title}
                 />
-                <div className="w-full lg:w-3/4 flex flex-col items-start justify-center p-16 text-light z-0">
-                    <Tags className={''} link={`/catagories/${slug(firstBlog.tags[0])}`} name={firstBlog.tags[0]} />
+                <div className="w-full lg:w-3/4 flex flex-col items-start justify-center p-6 sm:p-12 text-light z-0">
+                    <Tags className={'mb-2'} link={`/catagories/${slug(firstBlog.tags[0])}`} name={firstBlog.tags[0]} />
                     <Link href={firstBlog.url_path}>
                         <h1 className=" mt-2 capitalize font-semibold text-lg sm:text-xl md:text-3xl lg:text-4xl">
                             <span className="bg-gradient-to-r from-accent to-accent dark:from-accentDark/50 dark:to-accentDark bg-[length:0px_4px] rounded-sm 

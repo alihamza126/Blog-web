@@ -12,16 +12,16 @@ export async function generateStaticParams() {
 
 
   allBlogs.map((blog) => {
-    if (blog.isPublished) {
-      blog.tags.map((tag) => {
-        let slugfiy = slugger.slug(tag);
-        if (!allCatagories.includes(slugfiy)) {
-          allCatagories.push(slugfiy)
-          paths.push({ slug: slugfiy });
-        }
-      })
+    if (blog.isPublished && blog.tags.length > 0) {
+      let firstTag = blog.tags[0];
+      let slugfiy = slugger.slug(firstTag);
+      if (!allCatagories.includes(slugfiy)) {
+        allCatagories.push(slugfiy);
+        paths.push({ slug: slugfiy });
+      }
     }
-  })
+  });
+
   return paths
 }
 

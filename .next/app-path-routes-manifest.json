@@ -1,0 +1,13 @@
+{
+  "/_not-found": "/_not-found",
+  "/apple-icon.png/route": "/apple-icon.png",
+  "/favicon.ico/route": "/favicon.ico",
+  "/manifest.webmanifest/route": "/manifest.webmanifest",
+  "/page": "/",
+  "/disclaimer/page": "/disclaimer",
+  "/privacy-policy/page": "/privacy-policy",
+  "/blogs/[BlogSlug]/page": "/blogs/[BlogSlug]",
+  "/catagories/[slug]/page": "/catagories/[slug]",
+  "/(about)/contact/page": "/contact",
+  "/(about)/about/page": "/about"
+}

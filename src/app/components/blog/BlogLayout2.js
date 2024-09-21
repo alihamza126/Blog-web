@@ -5,7 +5,7 @@ import React from 'react'
 
 const BlogLayout2 = ({ Blog }) => {
   return (
-    <div className="group h-full  grid grid-cols-12 items-center gap-6">
+    <div className=" overflow-hidden group h-full mt-2 sm:mt-0  grid grid-cols-12 items-center gap-x-4">
       <Link href={Blog.url_path} className="col-span-12 lg:col-span-4 h-full rounded-xl overflow-hidden">
         <Image src={Blog.image.filePath.replace("../public", "")}
           blurDataURL={Blog.image.blurhashDataUrl}
@@ -18,8 +18,8 @@ const BlogLayout2 = ({ Blog }) => {
       </Link>
       <div className="col-span-12 lg:col-span-8 h-ful">
         <span className='inline-block w-full text-bold text-accent font-semibold  text-xs sm:text-sm dark:text-accentDark'>{Blog.tags[0]}</span>
-        <Link href={Blog.url_path} className='inline-block my-3 col-span-8 rounded-xl'>
-          <h2 className="capitalize font-semibold text-xs sm:text-lg">
+        <Link href={Blog.url_path} className='inline-block  mt-2 mb-0 sm:mb-3 col-span-8 rounded-xl'>
+          <h2 className="capitalize sm:font-semibold text-xs sm:text-lg pr-2">
             <span className="bg-gradient-to-r from-accent/50 to-accent/50 dark:from-accentDark/50 dark:accent-accentDark bg-[length:0px_4px] rounded-sm 
                         group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-all ease-in-out duration-150 text-xs sm:text-sm">
               {Blog.title}

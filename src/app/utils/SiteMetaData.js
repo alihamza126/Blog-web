@@ -1,6 +1,6 @@
 const siteMetadata = {
     siteName:"britennica",
-    titile: 'Britennica: Exploring Ideas, Inspiring Minds',
+    title: 'Britennica: Exploring Ideas, Inspiring Minds',
     author: 'Ali',
     headerTitle: 'britennica',
     description: "Britennica is your go-to source for insightful articles, thought-provoking ideas, and the latest trends across a wide range of topics. Whether you're interested in technology, lifestyle, health, or entertainment, Britennica delivers well-researched content that keeps you informed and inspired. Dive into our engaging blog posts and discover a world of knowledge and inspiration, all in one place.",
