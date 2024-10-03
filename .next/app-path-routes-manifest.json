@@ -6,8 +6,8 @@
   "/page": "/",
   "/disclaimer/page": "/disclaimer",
   "/privacy-policy/page": "/privacy-policy",
-  "/blogs/[BlogSlug]/page": "/blogs/[BlogSlug]",
   "/catagories/[slug]/page": "/catagories/[slug]",
-  "/(about)/contact/page": "/contact",
-  "/(about)/about/page": "/about"
+  "/blogs/[BlogSlug]/page": "/blogs/[BlogSlug]",
+  "/(about)/about/page": "/about",
+  "/(about)/contact/page": "/contact"
 }

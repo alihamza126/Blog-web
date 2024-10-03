@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer'
 import NextTopLoader from 'nextjs-toploader'
 import siteMetadata from './utils/SiteMetaData'
 import Script from 'next/script'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-in' })
 const manrope = Manrope({ subsets: ['latin'], display: 'swap', variable: '--font-mr' })
@@ -51,6 +52,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={cx(manrope.variable, inter.variable)}>
+      <Head>
+        <meta name="google-site-verification" content="ICrD9zwcGnf3ujFKl6rPY6VYgWWjPdMnH_wyVcgVSVs" />
+      </Head>
       <body
         className={`${inter.className}font-mr dark:bg-dark`}
       >

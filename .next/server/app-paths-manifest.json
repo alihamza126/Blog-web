@@ -6,8 +6,8 @@
   "/page": "app/page.js",
   "/disclaimer/page": "app/disclaimer/page.js",
   "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/blogs/[BlogSlug]/page": "app/blogs/[BlogSlug]/page.js",
   "/catagories/[slug]/page": "app/catagories/[slug]/page.js",
-  "/(about)/contact/page": "app/(about)/contact/page.js",
-  "/(about)/about/page": "app/(about)/about/page.js"
+  "/blogs/[BlogSlug]/page": "app/blogs/[BlogSlug]/page.js",
+  "/(about)/about/page": "app/(about)/about/page.js",
+  "/(about)/contact/page": "app/(about)/contact/page.js"
 }
